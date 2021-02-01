@@ -23,4 +23,14 @@ function submissionCheck(event)
         
     }
 }
+form.addEventListener("reset", resetForm)
+
+function resetForm(event)
+{
+	var requiredInputs = document.querySelectorAll(".required");
+	for(i = 0; i < requiredInputs.length; i++)
+	{
+		requiredInputs[i].classList.remove("error"); 
+	}
+}
 })
