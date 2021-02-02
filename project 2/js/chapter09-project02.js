@@ -21,5 +21,14 @@ window.addEventListener('load', function()
  	
        		
         }
+
        }); 
+       var img = document.querySelector("#featured img");
+       img.addEventListener("mouseover",function(event){
+             element.style.opacity=0.8;
+       });
+
+       img.addEventListener("mouseout",function(event){
+             element.style.opacity = 0;
+       });
  });
