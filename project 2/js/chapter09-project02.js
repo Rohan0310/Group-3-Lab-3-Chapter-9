@@ -3,6 +3,7 @@ window.addEventListener('load', function()
  {
 	var thumbs = document.getElementById("thumbnails");
        var element = document.querySelector('figcaption');
+       element.style.transition = 'opacity 1s';
        
        thumbs.addEventListener("click", function (a)
       {
